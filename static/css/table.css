@@ -1,0 +1,55 @@
+  /* Gaya dasar untuk navigasi */
+  .navigation-item {
+    position: relative;
+    list-style: none;
+  }
+
+  .navigation-link {
+    margin-left: 10px;
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    transition: background-color 0.3s ease;
+  }
+
+  .navigation-link:hover {
+    background-color: #e9ecef;
+  }
+
+  /* Dropdown menu */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    z-index: 1000;
+  }
+
+  .dropdown-content a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    padding: 10px 15px;
+    border-bottom: 1px solid #e9ecef;
+    transition: background-color 0.3s ease;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #f8f9fa;
+  }
+
+  .dropdown-content a:last-child {
+    border-bottom: none;
+  }
+
+  /* Tampilkan menu dropdown saat hover */
+  .navigation-item:hover .dropdown-content {
+    display: block;
+  }
